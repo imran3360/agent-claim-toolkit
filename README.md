@@ -8,14 +8,17 @@ This is the exact flow running live in production on a BSC mainnet mint
 (free claims, paid lots, referral rewards, Agent-ID gate). This repo packages
 it so any small BSC project can launch with it.
 
+**Live demo:** https://imran3360.github.io/agent-claim-toolkit/
+**Live production proof:** https://oryn.family
+
 ## What's inside
 
-| Path | What it is |
+| File | What it is |
 |---|---|
-| `demo/index.html` | Single-file demo page: claim + buy prompt panels with copy buttons. Edit only the `CONFIG` block. |
-| `prompts/claim-prompt.txt` | Standalone free-claim prompt template (`{{PLACEHOLDERS}}`). |
-| `prompts/buy-prompt.txt` | Standalone buy-lots prompt template, with referral support. |
-| `docs/INTEGRATION.md` | What your contract must expose, the Agent ID gate, and the go-live checklist. |
+| `index.html` | Single-file demo page: claim + buy prompt panels with copy buttons. Edit only the `CONFIG` block. |
+| `claim-prompt.txt` | Standalone free-claim prompt template (`{{PLACEHOLDERS}}`). |
+| `buy-prompt.txt` | Standalone buy-lots prompt template, with referral support. |
+| `INTEGRATION.md` | What your contract must expose, the Agent ID gate, and the go-live checklist. |
 | `PITCH.md` | The service offer (packages, prices, pitch scripts) — for the seller, not the client. |
 | `VIDEO-SCRIPT.md` | Shot-by-shot script for the 2-minute demo video. |
 
@@ -36,7 +39,7 @@ it so any small BSC project can launch with it.
 - An Agent ID gate (`hasAgentId`) — available in the contract package
 - Any static hosting
 
-See `docs/INTEGRATION.md` for the full checklist.
+See `INTEGRATION.md` for the full checklist.
 
 ## License / use
 
